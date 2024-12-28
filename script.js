@@ -11,17 +11,17 @@ function convertToRoman(num) {
 
 
   //your code here
-	let romen = '';
+	let roman = '';
 	for(let i=0; i<Object.keys(obj); i++){
 		const [symbol , value] = obj[i];
             
 		while (num>=value) { 
-			romen +=symbol;
+			roman +=symbol;
 			num -=value;
 		}
 	}
 
-	return romen;
+	return roman;
 
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
